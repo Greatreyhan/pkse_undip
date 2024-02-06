@@ -25,9 +25,9 @@ export default function Gallery() {
     <div className='w-11/12 mx-auto my-16' id="galleries">
       <h2 className='font-bold text-2xl border-l-2 border-neutral px-2 py-2 mb-8'>Gallery.</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-          {picts?.map(arr => {
+          {picts?.map((arr,j) => {
             return (
-              <div className="grid gap-2">
+              <div key={j} className="grid gap-2">
                 {arr?.map((img,i) => {
                   return(
                   <div key={i}  className="h-full max-w-full rounded-lg">
