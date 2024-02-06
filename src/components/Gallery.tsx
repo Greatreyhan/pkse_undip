@@ -30,7 +30,7 @@ export default function Gallery() {
               <div className="grid gap-2">
                 {arr?.map((img,i) => {
                   return(
-                  <div className="h-full max-w-full rounded-lg">
+                  <div key={i}  className="h-full max-w-full rounded-lg">
                     <Image key={i} className='h-full w-full object-cover border border-neutral'  src={`/Gallery/${img}`} width={500} height={500} alt={img} />
                   </div>
                   )
