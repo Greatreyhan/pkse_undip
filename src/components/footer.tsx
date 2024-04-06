@@ -22,7 +22,7 @@ export default function Footer() {
                 </div>
             </nav>
             <aside>
-                <p>Made with ❤ By Media & Relation Departement</p>
+                <p>Made with ❤ By Media & Relation Departement </p>
             </aside>
         </footer>
     )
